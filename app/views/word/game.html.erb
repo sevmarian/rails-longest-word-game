@@ -1,0 +1,9 @@
+<%= @grid %>
+
+<form action="/score">
+  <label for="question">Write a Word</label>
+  <input type="text" id="question" name="proposition" placeholder="write a word">
+  <input class ="btn btn-primary" type="submit" value="Go on!">
+    <input type="hidden" value="<%= @grid %>" name = "grid">
+
+</form>
